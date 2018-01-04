@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<!--
+Bruna Leo Kathy Mel
+Final Project
+Comp 1950
+-->
+	<head>
+		<title>BLKM Final Project</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="css/normalize.css"  />
+		<link rel="stylesheet" href="css/prototypestyle.css" media="all"/>
+		
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+	</head>
+	<body>
+	<div id="wrapper">
+<!--
+nav
+-->
+	
+	<nav class="nav">
+		<ul>
+			<li>
+				<a href="index.html">HOME</a>
+			</li>
+			<li>
+				<a href="#">PROTOTYPE</a>
+			</li>
+			<li>
+				<a href="sitemap.html">SITEMAP</a>
+			</li>
+			<li>
+				<a href="rationale.html">RATIONALE</a>
+			</li>
+			
+		</ul>
+	
+		
+		<div id="bcit"> 
+			BCIT
+		</div>
+		<div id="bcit_sub"> 
+			</br>
+			BRITISH COLUMBIA INSTITUTE OF TECHNOLOGY
+		</div>
+		<div class="yellow_line">
+		<strong>COMP 1950</strong> | INTERMEDIATE WEB DESIGN AND DEVELOPMENT
+		</div>
+		
+	</nav>
+	
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		
+<!--
+main
+-->	
+
+	<main>
+		
+		<h2>LECTURE ELEVEN: <strong>GROUP PROJECT WORK</strong></h2>
+
+			<button class="accordion">Section 1</button>
+			<div class="panel">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+
+			<button class="accordion">Section 2</button>
+			<div class="panel">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+
+			<button class="accordion">Section 3</button>
+			<div class="panel">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+
+			<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].onclick = function(){
+					this.classList.toggle("active");
+					var panel = this.nextElementSibling;
+					if (panel.style.display === "block") {
+						panel.style.display = "none";
+					} else {
+						panel.style.display = "block";
+					}
+				}
+			}
+			</script>
+		
+	
+		
+		
+	</main>
+		
+<!--
+footer
+-->			
+		
+		
+		<footer >
+		
+					
+		</footer>
+		
+	</div>			
+	</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<!--
+Bruna Leo Kathy Mel
+Final Project
+Comp 1950
+-->
+	<head>
+		<title> COMP 1950 - Lecture 01 | Protosite | BLKM Final Project </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="../../../css/normalize.css"  />
+		<link rel="stylesheet" href="../../../css/prototypestyle.css" media="all"/>
+		
+		<link rel="shortcut icon" type="image/x-icon" href="../../../images/favicon.ico">
+		<!-- SEARCH ENGINE TEXT -->		
+		<link rel="stylesheet" href="../tipuesearch/css/tipuesearch.css">
+	</head>
+	<body>
+	<div id="wrapper">
+<!--
+nav
+-->
+	
+	<nav >
+		<div>
+		 <img class="illustration" src="../../../images/illustration.png" alt="illustration" />
+		</div>
+		<div id="bcit"> 
+			BCIT
+		</div>
+		
+		<div id="bcit_sub"> 
+			BRITISH COLUMBIA INSTITUTE OF TECHNOLOGY
+		</div>
+		<div class="yellow_line">
+		<strong>COMP 1950</strong> | INTERMEDIATE WEB DESIGN AND DEVELOPMENT
+		</div>
+		
+		
+		<ul>
+			<li>
+				<a href="../../login.html">LOGIN</a>
+			</li>
+			
+			<li class="dropdown">
+    					<a href="javascript:void(0)" class="dropbtn">CONTENTS</a>
+   					 <div class="dropdown-content">
+      					<a href="../contents.html" target="_self">Course Description</a>
+      					<a href="../about.html" target="_self">About the course</a>
+   					  	<a href="../resources.html" target="_self">Resources</a>
+   					 </div>
+   			</li>
+   			<li class="dropdown">
+    					<a href="javascript:void(0)" class="dropbtn">LECTURES</a>
+   					 <div class="dropdown-content">
+      					<a href="#" target="_self">Lecture 01</a>
+      					<a href="#" target="_self">Lecture 02</a>
+      					<a href="#" target="_self">Lecture 03</a>
+      					<a href="#" target="_self">Lecture 04</a>
+      					<a href="#" target="_self">Lecture 05</a>
+      					<a href="#" target="_self">Lecture 06</a>
+      					<a href="#" target="_self">Lecture 07</a>
+      					<a href="#" target="_self">Lecture 08</a>
+      					<a href="#" target="_self">Lecture 09</a>
+      					<a href="#" target="_self">Lecture 10</a>
+      					<a href="lecture_eleven.html" target="_self">Lecture 11</a>
+   					 </div>
+   			</li>
+   					 
+   			<li>
+				<a href="../quiz.html" target="_self">QUIZZES</a>
+			</li>
+			<li>
+				<a href="../associated.html" target="_self">ASSOCIATED</a>
+			</li>
+			<li>
+				<a href="../contact.html" target="_self">CONTACT</a>
+			</li>
+		</ul>
+	
+		<form action="../search.html">
+			<div class="tipue_search_left"><img src="../tipuesearch/search.png" class="tipue_search_icon"></div>
+			<div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
+			<div style="clear: both;"></div>
+			</form>
+		
+	</nav>
+	
+		
+<!--
+main
+-->	
+
+	<div id="mainframe">
+		
+		<h2>LECTURE ONE<strong> COURSE INTRODUCTION </strong></h2>
+
+
+			<button class="accordion">AGENDA</button>
+			<div class="panel">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<ul class="list">
+					<li> Introductions </li>
+					<li> orientation </li>
+					<li> web development tools </li>
+					<li> standards based development </li>
+				</ul>
+			</div>
+
+			<button class="accordion">INTRODUCTIONS</button>
+			<div class="panel">
+				<p> Instructors:</p>
+				<ul class="list">
+					<li class="list">Jeffrey Parker <a href="mailto:jeffrey_parker@bcit.ca"> jeffrey_parker@bcit.ca </a></li> 
+					<li>Lynda Williams  <a href="mailto:lynda_williams@bcit.ca">lynda_williams@bcit.ca</a> </li>
+					<li><strong>All about you:</strong></li>
+				</ul>
+				<ul class="list2">
+					<li>Your name</li>
+					<li>Your background</li>
+					<li>What do you expect to achieve in this course? </li>
+				
+				</ul>
+			</div>
+
+			<button class="accordion">ORIENTATION OVERVIEW</button>
+			<div class="panel">
+			  <p>Learn <a href="http://bcitcomp.ca/comp1950/courseinfo/" target="_parent">about the course</a> to help you determine if this is the right class for you.</p>
+			</div>
+		
+		<button class="accordion">BCIT NETWORK: SHAREFILE</button>
+			<div class="panel">
+			  <p>BCIT lab computers are re-imaged each day, meaning you will lose any files you save on the local C: drive of a lab computer.
+				<br>
+
+<STRONG>Choose ONE of the folowing:</STRONG></p>
+<ul>
+	<li>Use <a href="http://kb.bcit.ca/sr/sharefile/2052.shtml">BCIT Sharefile</a> to save your work</li>
+	<li>Save your work to your personal USB or cloud storage account</li>
+	<li>Use your own laptop in class, and dont use the BCIT lab computers</li>
+</ul>
+		</div>
+	
+	<div id="totop"><a href="#top">GO TO TOP &#8679;</a></div>
+		
+<!-- -----------------script-------------------- -->		
+		
+			<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].onclick = function(){
+					this.classList.toggle("active");
+					var panel = this.nextElementSibling;
+					if (panel.style.display === "block") {
+						panel.style.display = "none";
+					} else {
+						panel.style.display = "block";
+					}
+				}
+			}
+			</script>
+		
+	
+		
+		
+	</div>
+		
+<!--
+footer
+-->			
+		
+		
+		<footer >
+		
+					
+		</footer>
+		
+	</div>			
+	</body>
+</html>
